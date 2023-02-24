@@ -1,13 +1,14 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import { Key } from 'react';
+import { Key, useState } from 'react';
 
 type Props = {
   items: Array<{id: Key, title: String}>;
 };
 
 export default function Home({ items }: Props) {
+  const [value, setValue] = useState('')
   const deleteItem = (id: Key) => {
     async function deleteTask() {
       const response = await fetch(`https://gwp3bt9vq3.execute-api.ap-northeast-1.amazonaws.com/deleteTaskById?itemId=${id}`, {method: 'DELETE'})
@@ -15,6 +16,16 @@ export default function Home({ items }: Props) {
       return data
     }
     deleteTask()
+  }
+  const addTask = (data: string) => {
+    console.log('addTask呼ばれた')
+    const requestBody = {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({title: data})
+    }
+    fetch('https://gwp3bt9vq3.execute-api.ap-northeast-1.amazonaws.com/tasks', requestBody)
+    .then((response) => response.json()).then((data) => console.log(data))
   }
   return (
     <>
@@ -26,6 +37,10 @@ export default function Home({ items }: Props) {
       </Head>
       <main className={styles.main}>
         <h1>Apiテスト</h1>
+        <h2>タスク登録</h2>
+        <input type="text" onChange={(e) => setValue(e.target.value)} />
+        <button onClick={() => addTask(value)}>追加</button>
+        <h3>タスク一覧</h3>
         {items.map((item) => {return <div key={item.id}>{item.title} <button onClick={() => deleteItem(item.id)}>削除</button></div>})}
       </main>
     </>
