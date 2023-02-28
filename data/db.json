@@ -1,0 +1,300 @@
+{
+  "items": [
+    {
+      "id": {
+        "S": "1"
+      },
+      "artist": {
+        "S": "=LOVE"
+      },
+      "categories": {
+        "NS": ["7", "2", "1"]
+      },
+      "fesName": {
+        "S": "TokyoIdolFestival 2022"
+      },
+      "itemDetail": {
+        "S": "「TIF」6年目で2日目トリ 貫禄の8曲パフォーマンス"
+      },
+      "itemImage": {
+        "S": "/images/fes-image/fes-image01.jpg"
+      },
+      "keywords": {
+        "SS": ["イコラブ", "イコールラブ"]
+      },
+      "playTime": {
+        "N": "60"
+      },
+      "releaseDate": {
+        "S": "2022-11-24"
+      },
+      "sevenDaysPrice": {
+        "N": "200"
+      },
+      "twoDaysPrice": {
+        "N": "100"
+      }
+    },
+    {
+      "id": {
+        "S": "2"
+      },
+      "artist": {
+        "S": "≠ME"
+      },
+      "categories": {
+        "NS": ["7", "5", "2", "1"]
+      },
+      "fesName": {
+        "S": "TokyoIdolFestival 2022"
+      },
+      "itemDetail": {
+        "S": "最新曲「す、好きじゃない！」を熱唱"
+      },
+      "itemImage": {
+        "S": "/images/fes-image/fes-image02.jpg"
+      },
+      "keywords": {
+        "SS": [
+          "ノットイコールミー",
+          "ノイミー",
+          "のっといこーるみー",
+          "のいみー",
+          "ティフ"
+        ]
+      },
+      "playTime": {
+        "N": "60"
+      },
+      "releaseDate": {
+        "S": "2022-11-24"
+      },
+      "sevenDaysPrice": {
+        "N": "200"
+      },
+      "twoDaysPrice": {
+        "N": "100"
+      }
+    },
+    {
+      "id": {
+        "S": "3"
+      },
+      "artist": {
+        "S": "sumika"
+      },
+      "categories": {
+        "NS": ["1", "3", "6"]
+      },
+      "fesName": {
+        "S": "JAPAN JAM2022"
+      },
+      "itemDetail": {
+        "S": "sumikaです"
+      },
+      "itemImage": {
+        "S": "/images/fes-image/fes-image03.jpg"
+      },
+      "keywords": {
+        "SS": ["スミカ", "すみか", "ジャパンジャム"]
+      },
+      "playTime": {
+        "N": "60"
+      },
+      "releaseDate": {
+        "S": "2022-11-24"
+      },
+      "sevenDaysPrice": {
+        "N": "200"
+      },
+      "twoDaysPrice": {
+        "N": "100"
+      }
+    },
+    {
+      "id": {
+        "S": "4"
+      },
+      "artist": {
+        "S": "ポルカドットスティングレイ"
+      },
+      "categories": {
+        "NS": ["1", "3", "6", "7"]
+      },
+      "fesName": {
+        "S": "JAPAN JAM2022"
+      },
+      "itemDetail": {
+        "S": "ポルカです"
+      },
+      "itemImage": {
+        "S": "/images/fes-image/fes-image04.jpg"
+      },
+      "keywords": {
+        "SS": ["ぽるかどっとすてぃんぐれい", "ジャパンジャム"]
+      },
+      "playTime": {
+        "N": "60"
+      },
+      "releaseDate": {
+        "S": "2022-11-24"
+      },
+      "sevenDaysPrice": {
+        "N": "200"
+      },
+      "twoDaysPrice": {
+        "N": "100"
+      }
+    },
+    {
+      "id": {
+        "S": "5"
+      },
+      "artist": {
+        "S": "≒JOY"
+      },
+      "categories": {
+        "NS": ["1", "2", "7"]
+      },
+      "fesName": {
+        "S": "TokyoIdolFestival 2022"
+      },
+      "itemDetail": {
+        "S": "ニアジョイです"
+      },
+      "itemImage": {
+        "S": "/images/fes-image/fes-image05.jpg"
+      },
+      "keywords": {
+        "SS": [
+          "にありーいこーるじょい",
+          "にあじょい",
+          "ニアリーイコールジョイ",
+          "ニアジョイ"
+        ]
+      },
+      "playTime": {
+        "N": "60"
+      },
+      "releaseDate": {
+        "S": "2022-11-24"
+      },
+      "sevenDaysPrice": {
+        "N": "200"
+      },
+      "twoDaysPrice": {
+        "N": "100"
+      }
+    },
+    {
+      "id": {
+        "S": ""
+      },
+      "artist": {
+        "S": ""
+      },
+      "categories": {
+        "NS": ["", "", "", ""]
+      },
+      "fesName": {
+        "S": ""
+      },
+      "itemDetail": {
+        "S": ""
+      },
+      "itemImage": {
+        "S": "/images/fes-image/fes-image02.jpg"
+      },
+      "keywords": {
+        "SS": ["", "", "", "", ""]
+      },
+      "playTime": {
+        "N": "60"
+      },
+      "releaseDate": {
+        "S": "2022-11-24"
+      },
+      "sevenDaysPrice": {
+        "N": "200"
+      },
+      "twoDaysPrice": {
+        "N": "100"
+      }
+    }
+  ],
+  "users": [
+    {
+      "id": {
+        "S": "uuid"
+      },
+      "buildingName": {
+        "S": ""
+      },
+      "city": {
+        "S": "浦安市舞浜"
+      },
+      "familyName": {
+        "S": "舞浜"
+      },
+      "familyNameKana": {
+        "S": "マイハマ"
+      },
+      "favoriteGenre": {
+        "N": "0"
+      },
+      "firstName": {
+        "S": "太郎"
+      },
+      "firstNameKana": {
+        "S": "タロウ"
+      },
+      "houseNumber": {
+        "S": "2丁目"
+      },
+      "mailAddress": {
+        "S": "maihama@maihama"
+      },
+      "password": {
+        "S": "qwer1234@"
+      },
+      "prefectures": {
+        "S": "千葉県"
+      },
+      "rentalHistories": {
+        "L": [
+          {
+            "M": {
+              "id": {
+                "S": "1"
+              },
+              "itemId": {
+                "N": "4"
+              },
+              "itemImage": {
+                "S": "/images/fes-image/fes-image04.jpg"
+              },
+              "itemName": {
+                "S": "ポルカドットスティングレイ  JAPAN JAM2022"
+              },
+              "price": {
+                "N": "100"
+              },
+              "rentalPeriod": {
+                "N": "2"
+              }
+            }
+          }
+        ]
+      },
+      "userCarts": {
+        "L": []
+      },
+      "userName": {
+        "S": "マイハマ"
+      },
+      "zipcode": {
+        "S": "2790031"
+      }
+    }
+  ]
+}

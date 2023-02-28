@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
-import { Key, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 
@@ -11,6 +11,7 @@ type Props = {
 
 export default function Home({ items }: Props) {
   const [value, setValue] = useState('')
+  // const [imgURL, setURL] = useState('')
   const router = useRouter()
   const deleteItem = (id: string) => {
     async function deleteTask() {
@@ -30,6 +31,15 @@ export default function Home({ items }: Props) {
     fetch('https://gwp3bt9vq3.execute-api.ap-northeast-1.amazonaws.com/tasks', requestBody)
     .then((response) => response.json()).then((data) => console.log(data))
   }
+  // useEffect(()=>{
+  //   fetch('https://gwp3bt9vq3.execute-api.ap-northeast-1.amazonaws.com/getImage')
+  //   .then((response) => response.blob())
+  //   .then((myBlob) => {
+  //     const data = URL.createObjectURL(myBlob);
+  //     setURL(data);
+  //     console.log(myBlob)
+  //   })
+  // }, [])
   return (
     <>
       <Head>
@@ -38,6 +48,7 @@ export default function Home({ items }: Props) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Image src={'https://aws-lambda-images-418581597558.s3.ap-northeast-1.amazonaws.com/fortutorial.jpg'} alt={'サムネイル'} width={100} height={100} />
       <main className={styles.main}>
         <h1>Apiテスト</h1>
         <h2>タスク登録</h2>
@@ -53,6 +64,7 @@ export default function Home({ items }: Props) {
 export async function getServerSideProps() {
   const response = await fetch('https://gwp3bt9vq3.execute-api.ap-northeast-1.amazonaws.com/tasks');
   const data = await response.json();
+  
   return {
     props: {
       items: data.tasks
